@@ -1,14 +1,14 @@
-spring
+spring:
   profiles:
     active:
       - dev
 ---
-spring
+spring:
   profiles: dev     #开发环境
   application:
     name: microservicecloud-config-exer-dev
 ---
-spring
+spring:
   profiles: test
   application:
     name: microservicecloud-config-exer-test    #测试环境
