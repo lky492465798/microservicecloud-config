@@ -12,9 +12,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource                                            #数据源
     driver-class-name: com.mysql.cj.jdbc.Driver                                             #驱动类
-    url: jdbc:mysql://cdb-bt6j5xwk.cd.tencentcdb.com:10069/cloudDB01?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/cloudDB01?serverTimezone=UTC
     username: root
-    password: onspeed0
+    password: 123456
     dbcp2:
       min-idle: 5                                                                             #最小连接数
       initial-size: 5                                                                         #初始化连接数
@@ -49,9 +49,9 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource                                            #数据源
     driver-class-name: com.mysql.cj.jdbc.Driver                                             #驱动类
-    url: jdbc:mysql://cdb-bt6j5xwk.cd.tencentcdb.com:10069/cloudDB02?serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/cloudDB01?serverTimezone=UTC
     username: root
-    password: onspeed0
+    password: 123456
     dbcp2:
       min-idle: 5                                                                             #最小连接数
       initial-size: 5                                                                         #初始化连接数
