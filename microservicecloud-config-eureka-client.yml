@@ -36,4 +36,3 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://eureka7001.com/eureka/
-12312
