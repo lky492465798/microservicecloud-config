@@ -23,7 +23,8 @@ spring:
 mybatis:
    config-location: classpath:mybatis/mybatis.xml        #mybatis配置文件所在路径
    type-aliases-package: com.exer.springcloud.entities           #所有Entity别名类所在包
-   mapper-locations: mybatis/mapper/**/*.xml        #mapper映射文件
+   mapper-locations: 
+    - classpath:mybatis/mapper/**/*.xml #mapper映射文件
 eureka:
   instance:
     hostname: eureka7001.com    # eureka 服务器端的实例名称
@@ -48,7 +49,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource                                            #数据源
     driver-class-name: com.mysql.cj.jdbc.Driver                                             #驱动类
-    url: jdbc:mysql://cdb-bt6j5xwk.cd.tencentcdb.com:10069/cloudDB01?serverTimezone=UTC
+    url: jdbc:mysql://cdb-bt6j5xwk.cd.tencentcdb.com:10069/cloudDB02?serverTimezone=UTC
     username: root
     password: onspeed0
     dbcp2:
@@ -59,7 +60,8 @@ spring:
 mybatis:
    config-location: classpath:mybatis/mybatis.xml       #mybatis配置文件所在路径
    type-aliases-package: com.exer.springcloud.entities           #所有Entity别名类所在包
-   mapper-locations: mybatis/mapper/**/*.xml        #mapper映射文件
+   mapper-locations: 
+    - classpath:mybatis/mapper/**/*.xml #mapper映射文件
 eureka:
   instance:
     hostname: eureka7001.com    # eureka 服务器端的实例名称
